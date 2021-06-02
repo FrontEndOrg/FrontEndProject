@@ -1,0 +1,36 @@
+#carouselExampleIndicators{
+    background-image: url(https://flevix.com/wp-content/uploads/2020/01/Shadow-Fall-Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:30em;
+    display: flex;
+}
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+#message
+{
+    width: 70px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+#tv{
+    width: 20%;
+    margin-right: 10em;
+}
+.features{
+    width: 300px;
+}
+.getStarted{
+    position: absolute;
+    bottom: 20%;
+    left: 13%;
+    background-color:  #fe4066;
+}
+.row
+{
+    width: 98%;
+    margin-left: 1%;
+}

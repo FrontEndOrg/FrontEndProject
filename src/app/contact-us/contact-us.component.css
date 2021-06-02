@@ -1,0 +1,7 @@
+#col2{
+    background-color: rgb(150, 169, 204);
+    padding-right: 2%;
+}
+.bg{
+    background-image: linear-gradient(to right,rgb(76, 149, 245),rgb(47, 243, 233));
+}

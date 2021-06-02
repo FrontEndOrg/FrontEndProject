@@ -1,0 +1,25 @@
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none !important ;
+    border-radius: 0px;
+}
+img{
+    max-width: 500px;
+    height: 400px;
+}
+h1,#submit{
+    background-image: linear-gradient(to right,rgb(138, 138, 248),rgb(52, 189, 207));
+}
+
+@media screen and (max-width:768px) {
+    img{
+        width: 100px;
+        height:75px;
+    }
+    
+}
+.row{
+    width: 96%;
+    margin-left: 2%;
+}

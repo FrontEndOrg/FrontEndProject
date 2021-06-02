@@ -1,0 +1,46 @@
+<!--corousel-->
+<div class="row">
+    <div class="col-md-5 mt-5">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://imgs.bharatmatrimony.com/bmimgs/login/login-otp-banner.png">
+          </div>
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://d2v1hpltdjq1rf.cloudfront.net/static/account/assets/images/ic-login.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!--form-->
+    <div class="col-md-7 mt-3 border-2 shadow bg-white mb-3">
+      <h1 class="text-center heading text-white mt-3 shadow">
+        Login Form
+      </h1>
+  
+      <form #ref="ngForm" (ngSubmit)="ref.form.valid && onLogin(ref)">
+        <!--username-->
+        <div class="form-floating mt-3">
+          <input type="text" name="username" id="un" class="form-control" autocomplete="off" placeholder="Enter name" ngModel required #refUsername="ngModel">
+          <label for="un">Username</label>
+          <p class="text-danger" *ngIf="(ref.submitted || refUsername.touched) && refUsername.errors?.required"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;Username is required</p>
+        </div>
+        <!--password-->
+        <div class="form-floating mt-3">
+          <input type="password" name="pw" id="pw" class="form-control" placeholder="enter password" ngModel required #refPassword="ngModel">
+          <label for="pw">password</label>
+          <p class="text-danger" *ngIf="(ref.submitted || refPassword.touched) && refPassword.errors?.required"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;password is required</p>
+        </div>
+        <!--submit-->
+        <button type="submit" class="btn d-block mx-auto m-3 text-white fs-5" id="submit">Login</button>
+
+        <div class="mb-3">
+          <!--Forgot password-->
+          <a href="login" class="float-end">Forgot password?</a>
+          <!--New users-->
+          <a href="register" class="ms-2">New User?</a>
+        </div>
+      </form>
+    </div>
+  </div>
