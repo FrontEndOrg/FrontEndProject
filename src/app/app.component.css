@@ -4,3 +4,6 @@ img{
 .active{
     font-weight: bold;
 }
+.navbar-brand{
+    color: rgb(255, 65, 7);
+}

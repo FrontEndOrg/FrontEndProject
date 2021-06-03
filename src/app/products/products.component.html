@@ -1,9 +1,33 @@
 <form>
-    <div class="ms-3">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 w-100">
+    <div class="ms-3 mt-5">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 g-3 w-100">
             <div class="col mb-2" *ngFor="let dataObj of data.feed;let ind=index">
-                <p>{{dataObj.display.displayName}}</p>
-                <img src="{{dataObj.display.images}}" alt="">
+                <div class="card h-100">
+                   <img src="{{dataObj.display.images[0]}}" alt="" title="{{dataObj.display.displayName}}">
+                   <span class="card-img-overlay flag fw-bold bg-white">
+                       <span>{{dataObj.display.flag}}</span>
+                    </span>
+                    <div class="card-body text-center">
+                        <p>{{dataObj.display.displayName}}</p>
+                    </div>
+                    <div>
+                        <a class="rating btn btn-sm">
+                            <i class="fas fa-star"></i>
+                        </a>
+                        <a class="rating btn btn-sm">
+                            <i class="fas fa-star"></i>
+                        </a>
+                        <a class="rating btn btn-sm">
+                            <i class="fas fa-star"></i>
+                        </a>
+                        <a class="rating btn btn-sm">
+                            <i class="fas fa-star"></i>
+                        </a>
+                        <a class="rating btn btn-sm">
+                            <i class="fas fa-star"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

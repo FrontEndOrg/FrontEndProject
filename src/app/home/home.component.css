@@ -1,36 +1,56 @@
-#carouselExampleIndicators{
-    background-image: url(https://flevix.com/wp-content/uploads/2020/01/Shadow-Fall-Background.svg);
+.bg{
+    background-image: url(D:\FrontEndProject\src\assets\oatmeal-dryfruits-with-bird-paradise-flower-white-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:30em;
-    display: flex;
-}
-.carousel-inner{
-    display: flex;
-    align-items: center;
+    height:35em;
+    position: relative;
 }
 #message
 {
-    width: 70px;
+    width: 6%;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-}
-#tv{
-    width: 20%;
-    margin-right: 10em;
-}
-.features{
-    width: 300px;
+    bottom: 7%;
+    right: 7%;
 }
 .getStarted{
     position: absolute;
     bottom: 20%;
-    left: 13%;
+    left: 15%;
     background-color:  #fe4066;
+    font-size: x-large;
 }
-.row
-{
-    width: 98%;
-    margin-left: 1%;
+#cuisines{
+    width: 96%;
+    margin-left: 2%;
+}
+.cuisine{
+    opacity: 75%;
+}
+.card-img-overlay{
+    top: 25%;
+}
+
+@media screen and (max-width:400px) {
+    .bg{
+        height:15em;
+    }
+    .getStarted,p{
+        font-size: xx-small;
+    }
+}
+@media screen and (min-width:401px ) and (max-width:650px) {
+    .bg{
+        height:20em;
+    }
+    .getStarted,p{
+        font-size:small;
+    }
+}
+@media screen and (min-width:651px ) and (max-width:950px) {
+    .bg{
+        height:25em;
+    }
+    .getStarted,p{
+        font-size:medium;
+    }
 }
