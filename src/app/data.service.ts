@@ -11,11 +11,11 @@ export class DataService {
 
   //to read all data
   getFoodData():Observable<any>{
-    return this.hc.get<any>("https://yummly2.p.rapidapi.com/feeds/list",{
-      "headers":{
-        "x-rapidapi-key": "2450e6ecb9msh53bdd61f601289cp1f0530jsndcfdeab4e917",
-	      "x-rapidapi-host": "yummly2.p.rapidapi.com"
-	      //"useQueryString": true
+
+    return this.hc.get<any>("https://yummly2.p.rapidapi.com/feeds/list-similarities",{
+      "headers": {
+        //"x-rapidapi-key": "c4b7d7f039mshb8d7469df86afe4p1115fbjsnecc9a48c66f3",
+        //"x-rapidapi-host": "yummly2.p.rapidapi.com"
       }
     })
   }

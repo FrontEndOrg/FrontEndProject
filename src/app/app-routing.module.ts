@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
-  {path:'products',component:ProductsComponent},
+  {path:'reciepe',component:ProductsComponent},
   {path:'contactus',component:ContactUsComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'},
   {path:'**',component:PageNotFoundComponent}
