@@ -12,6 +12,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponent } from './products/products.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductsComponent } from './products/products.component';
     ContactUsComponent,
     PageNotFoundComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
